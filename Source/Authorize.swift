@@ -27,7 +27,7 @@ public class Authorize {
             break
         }
 
-        authorize { [unowned self] session, error in
+        authorize(withNameOfProvider: nameOfProvider) { [unowned self] session, error in
             self.systemProvider = nil
             self.webProvider = nil
             
@@ -35,8 +35,9 @@ public class Authorize {
         }
     }
     
-    private func authorize(_ completion: @escaping Providing.Completion) {
+    private func authorize(withNameOfProvider nameOfProvider: String, _ completion: @escaping Providing.Completion) {
         guard webProvider != nil else {
+            LogService.output("There is no provider with name \(nameOfProvider)")
             completion(nil, AuthorizeError.provider)
             return
         }

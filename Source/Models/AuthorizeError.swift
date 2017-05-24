@@ -21,7 +21,7 @@ public enum AuthorizeError: Error {
     }
     
     static var parseMessage: String {
-        return ""
+        return "There is wrong parse of network response"
     }
     
     public static func turnLogOn() {
