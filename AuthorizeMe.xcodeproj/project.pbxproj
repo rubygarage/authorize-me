@@ -49,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2155041ED5B2FE0084A5C8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthorizeMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B972A921ED468A4001853CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B972A971ED468A5001853CF /* AuthorizeMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthorizeMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B2155031ED5B2FE0084A5C8 /* CommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				0B2155041ED5B2FE0084A5C8 /* module.modulemap */,
+			);
+			path = CommonCrypto;
+			sourceTree = "<group>";
+		};
 		0B972A841ED468A4001853CF = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				0B972AAB1ED4692D001853CF /* Authorize.swift */,
+				0B2155031ED5B2FE0084A5C8 /* CommonCrypto */,
 				0B972AAC1ED4692D001853CF /* Common */,
 				0B972ACB1ED4692D001853CF /* Models */,
 				0B972AC91ED4692D001853CF /* Controllers */,
