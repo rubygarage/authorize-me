@@ -16,10 +16,9 @@ class ProvidersTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        tableView.isUserInteractionEnabled = false
         
         let cell = tableView.cellForRow(at: indexPath)!
-        let title = cell.textLabel!.text
+        var title = cell.textLabel!.text!
         
         switch indexPath.section {
         case 0:
@@ -41,14 +40,16 @@ class ProvidersTableViewController: UITableViewController {
         
         let provider = systemProvider != nil ? systemProvider : webProvider
         
-        guard let provider = provider else {
+        if provider == nil {
             let alertController = AlertService.alert(withTitle: "Error", message: "Problem with provider")
             self.present(alertController, animated: true)
             
             return
         }
         
-        provider.authorize { [unowned self] session, error in
+        tableView.isUserInteractionEnabled = false
+        
+        provider!.authorize { [unowned self] session, error in
             self.tableView.isUserInteractionEnabled = true
          
             var message: String?

@@ -18,7 +18,7 @@ public extension URLSession {
                 guard let response = response as? HTTPURLResponse,
                     response.statusCode == 200 else {
                         
-                        LogService.print(AuthorizeError.networkMessage)
+                        LogService.output(AuthorizeError.networkMessage)
                         completion(nil, AuthorizeError.network)
                         return
                 }

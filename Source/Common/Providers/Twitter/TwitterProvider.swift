@@ -24,9 +24,9 @@ public class TwitterProvider: Provider {
         guard options["consumerKey"] != nil, options["consumerSecret"] != nil else {
             
             if options["consumerKey"] == nil {
-                LogService.print("There is no consumer key in \(name).plist file")
+                LogService.output("There is no consumer key in \(name).plist file")
             } else {
-                LogService.print("There is no consumer secret in \(name).plist file")
+                LogService.output("There is no consumer secret in \(name).plist file")
             }
             
             return nil

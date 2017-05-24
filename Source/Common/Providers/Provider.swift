@@ -24,12 +24,12 @@ public class Provider: Providing {
         guard let path = Bundle.main.path(forResource: name, ofType: "plist"),
             let contents = NSDictionary(contentsOfFile: path) as? [String: Any] else {
                 
-                LogService.print("There is no \(name).plist file")
+                LogService.output("There is no \(name).plist file")
                 return nil
         }
         
         if contents["redirectUri"] == nil {
-            LogService.print("There is no redirect uri in \(name).plist file")
+            LogService.output("There is no redirect uri in \(name).plist file")
             return nil
         }
         
@@ -37,7 +37,7 @@ public class Provider: Providing {
     }
     
     public func authorize(_ completion: @escaping Providing.Completion) {
-        LogService.print("There is no implementation of authorization function")
+        LogService.output("There is no implementation of authorization function")
         completion(nil, AuthorizeError.provider)
     }
     

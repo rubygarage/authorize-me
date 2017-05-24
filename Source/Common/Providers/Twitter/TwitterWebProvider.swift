@@ -48,7 +48,7 @@ public class TwitterWebProvider: TwitterProvider {
                 let token = parameters.dictionary["oauth_token"] else {
                     
                     if error == nil {
-                        LogService.print(AuthorizeError.parseMessage)
+                        LogService.output(AuthorizeError.parseMessage)
                     }
                     
                     completion(nil, error ?? AuthorizeError.parse)
@@ -79,7 +79,7 @@ public class TwitterWebProvider: TwitterProvider {
                 
                 completion(token, nil)
             } else {
-                LogService.print(AuthorizeError.parseMessage)
+                LogService.output(AuthorizeError.parseMessage)
                 completion(nil, AuthorizeError.parse)
             }
         }
@@ -106,7 +106,7 @@ public class TwitterWebProvider: TwitterProvider {
                 let secret = parameters.dictionary["oauth_token_secret"] else {
                     
                     if error == nil {
-                        LogService.print(AuthorizeError.parseMessage)
+                        LogService.output(AuthorizeError.parseMessage)
                     }
                     
                     completion(nil, error ?? AuthorizeError.parse)
@@ -127,7 +127,7 @@ public class TwitterWebProvider: TwitterProvider {
                 let account = try? JSONSerialization.jsonObject(with: data) as! [String: Any] else {
                     
                     if error == nil {
-                        LogService.print(AuthorizeError.parseMessage)
+                        LogService.output(AuthorizeError.parseMessage)
                     }
                     
                     completion(nil, error ?? AuthorizeError.parse)

@@ -19,7 +19,7 @@ public extension SLRequest {
                 guard let response = response,
                     response.statusCode == 200 else {
                         
-                        LogService.print(AuthorizeError.networkMessage)
+                        LogService.output(AuthorizeError.networkMessage)
                         completion(nil, AuthorizeError.network)
                         return
                 }

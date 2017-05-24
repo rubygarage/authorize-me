@@ -12,7 +12,7 @@ struct LogService {
     
     static var isLogOn = false
     
-    static func print(_ message: String) {
+    static func output(_ message: String) {
         #if DEBUG
             if isLogOn {
                 print("AuthorizeMe: \(message)")

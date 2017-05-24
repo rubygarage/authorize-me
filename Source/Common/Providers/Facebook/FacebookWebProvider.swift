@@ -56,7 +56,7 @@ public class FacebookWebProvider: FacebookProvider {
                 
                 completion(["access_token": token, "expires_in": expire], nil)
             } else {
-                LogService.print(AuthorizeError.parseMessage)
+                LogService.output(AuthorizeError.parseMessage)
                 completion(nil, AuthorizeError.parse)
             }
         }

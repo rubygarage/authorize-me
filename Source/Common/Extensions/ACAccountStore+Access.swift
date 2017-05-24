@@ -27,9 +27,9 @@ public extension ACAccountStore {
                     accounts.count > 0 else {
                         
                         if !granted {
-                            LogService.print("There is no access to account")
+                            LogService.output("There is no access to account")
                         } else {
-                            LogService.print("There is no account")
+                            LogService.output("There is no account")
                         }
                         
                         completion(nil, AuthorizeError.accounts)
