@@ -8,9 +8,13 @@
 
 import Foundation
 
-struct LogService {
+public struct LogService {
     
     static var isLogOn = false
+    
+    public static func turnLogOn() {
+        LogService.isLogOn = true
+    }
     
     static func output(_ message: String) {
         #if DEBUG

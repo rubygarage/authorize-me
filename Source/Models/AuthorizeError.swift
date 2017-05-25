@@ -16,16 +16,12 @@ public enum AuthorizeError: Error {
     case accounts
     case cancel
     
-    static var networkMessage: String {
+    public static var networkMessage: String {
         return "There is bad network response"
     }
     
-    static var parseMessage: String {
+    public static var parseMessage: String {
         return "There is wrong parse of network response"
-    }
-    
-    public static func turnLogOn() {
-        LogService.isLogOn = true
     }
     
 }

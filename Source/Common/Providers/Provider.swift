@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class Provider: Providing {
+open class Provider: Providing {
     
-    public var name: String {
+    open var name: String {
         return "Provider"
     }
     
@@ -36,7 +36,7 @@ public class Provider: Providing {
         options = contents
     }
     
-    public func authorize(_ completion: @escaping Providing.Completion) {
+    open func authorize(_ completion: @escaping Providing.Completion) {
         LogService.output("There is no implementation of authorization function")
         completion(nil, AuthorizeError.provider)
     }
