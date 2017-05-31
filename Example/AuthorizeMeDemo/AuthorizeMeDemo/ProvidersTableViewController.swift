@@ -51,6 +51,9 @@ class ProvidersTableViewController: UITableViewController {
         
         provider!.authorize { [unowned self] session, error in
             self.tableView.isUserInteractionEnabled = true
+            
+            self.systemProvider = nil
+            self.webProvider = nil
          
             var message: String?
             
