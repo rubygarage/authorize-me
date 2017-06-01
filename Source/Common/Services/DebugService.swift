@@ -15,7 +15,7 @@ public struct DebugService {
     static func output(_ message: String) {
         #if DEBUG
             if isNeedOutput {
-                print("AuthorizeMe: \(message)")
+                print("[AuthorizeMe] \(message)")
             }
         #endif
     }

@@ -34,6 +34,17 @@ class ProvidersTableViewController: UITableViewController {
             default:
                 break
             }
+        case 1:
+            switch indexPath.row {
+            case 0:
+                webProvider = GoogleWebProvider()
+            case 1:
+                webProvider = InstagramWebProvider()
+            case 2:
+                webProvider = LinkedInWebProvider()
+            default:
+                break
+            }
         default:
             break
         }

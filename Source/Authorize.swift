@@ -18,16 +18,27 @@ public class Authorize {
     public func on(_ nameOfProvider: String, _ completion: @escaping Providing.Completion) {
         switch nameOfProvider {
         case _ where nameOfProvider == "Facebook":
-            systemProvider = FacebookSystemProvider()
-            webProvider = FacebookWebProvider()
+            if FacebookProvider() != nil {
+                systemProvider = FacebookSystemProvider()
+                webProvider = FacebookWebProvider()
+            }
         case _ where nameOfProvider == "Twitter":
-            systemProvider = TwitterSystemProvider()
-            webProvider = TwitterWebProvider()
+            if TwitterProvider() != nil {
+                systemProvider = TwitterSystemProvider()
+                webProvider = TwitterWebProvider()
+            }
+        case _ where nameOfProvider == "Google":
+            webProvider = GoogleWebProvider()
         default:
-            break
+            DebugService.output("There is no provider with name \(nameOfProvider)")
         }
-
-        authorize(withNameOfProvider: nameOfProvider) { [unowned self] session, error in
+        
+        guard systemProvider != nil || webProvider != nil else {
+            completion(nil, AuthorizeError.provider)
+            return
+        }
+        
+        authorize { [unowned self] session, error in
             self.systemProvider = nil
             self.webProvider = nil
             
@@ -35,13 +46,7 @@ public class Authorize {
         }
     }
     
-    private func authorize(withNameOfProvider nameOfProvider: String, _ completion: @escaping Providing.Completion) {
-        guard webProvider != nil else {
-            LogService.output("There is no provider with name \(nameOfProvider)")
-            completion(nil, AuthorizeError.provider)
-            return
-        }
-        
+    private func authorize(_ completion: @escaping Providing.Completion) {
         if systemProvider != nil {
             authorizeBySystem(withCompletion: completion)
         } else {

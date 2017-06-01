@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4E16F11EE0762B00206B57 /* CookieStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E16EF1EE0762B00206B57 /* CookieStorageService.swift */; };
+		0B4E16F21EE0762B00206B57 /* UserAgentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E16F01EE0762B00206B57 /* UserAgentService.swift */; };
 		0B972A981ED468A5001853CF /* AuthorizeMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */; };
 		0B972A9D1ED468A5001853CF /* AuthorizeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972A9C1ED468A5001853CF /* AuthorizeMeTests.swift */; };
 		0B972AA91ED46927001853CF /* AuthorizeMe.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0B972AA81ED46927001853CF /* AuthorizeMe.podspec */; };
@@ -36,6 +38,8 @@
 		0B972AE61ED4692D001853CF /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ACD1ED4692D001853CF /* Session.swift */; };
 		0B972AE71ED4692D001853CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ACE1ED4692D001853CF /* User.swift */; };
 		0B972AE91ED46FE2001853CF /* DebugService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AE81ED46FE2001853CF /* DebugService.swift */; };
+		0BC0CA3D1EE0032D00A2734F /* GoogleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0CA351EE0032D00A2734F /* GoogleProvider.swift */; };
+		0BC0CA3E1EE0032D00A2734F /* GoogleWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0CA361EE0032D00A2734F /* GoogleWebProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		0B2155041ED5B2FE0084A5C8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		0B4E16EF1EE0762B00206B57 /* CookieStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookieStorageService.swift; sourceTree = "<group>"; };
+		0B4E16F01EE0762B00206B57 /* UserAgentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAgentService.swift; sourceTree = "<group>"; };
 		0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthorizeMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B972A921ED468A4001853CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B972A971ED468A5001853CF /* AuthorizeMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthorizeMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +88,8 @@
 		0B972ACD1ED4692D001853CF /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		0B972ACE1ED4692D001853CF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0B972AE81ED46FE2001853CF /* DebugService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugService.swift; sourceTree = "<group>"; };
+		0BC0CA351EE0032D00A2734F /* GoogleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleProvider.swift; sourceTree = "<group>"; };
+		0BC0CA361EE0032D00A2734F /* GoogleWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleWebProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +210,7 @@
 				0B972ABF1ED4692D001853CF /* Provider.swift */,
 				0B972ABB1ED4692D001853CF /* Facebook */,
 				0B972AC01ED4692D001853CF /* Twitter */,
+				0BC0CA341EE0032D00A2734F /* Google */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -232,6 +241,8 @@
 				0B972AE81ED46FE2001853CF /* DebugService.swift */,
 				0B972AC51ED4692D001853CF /* AlertService.swift */,
 				0B972AC61ED4692D001853CF /* WebRequestService.swift */,
+				0B4E16F01EE0762B00206B57 /* UserAgentService.swift */,
+				0B4E16EF1EE0762B00206B57 /* CookieStorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -252,6 +263,15 @@
 				0B972ACC1ED4692D001853CF /* AuthorizeError.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0BC0CA341EE0032D00A2734F /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				0BC0CA351EE0032D00A2734F /* GoogleProvider.swift */,
+				0BC0CA361EE0032D00A2734F /* GoogleWebProvider.swift */,
+			);
+			path = Google;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,10 +394,13 @@
 				0B972AD31ED4692D001853CF /* String+Encoding.swift in Sources */,
 				0B972ADE1ED4692D001853CF /* Provider.swift in Sources */,
 				0B972AD21ED4692D001853CF /* SLRequest+Performing.swift in Sources */,
+				0BC0CA3E1EE0032D00A2734F /* GoogleWebProvider.swift in Sources */,
+				0B4E16F11EE0762B00206B57 /* CookieStorageService.swift in Sources */,
 				0B972AD51ED4692D001853CF /* String+Transforming.swift in Sources */,
 				0B972AE01ED4692D001853CF /* TwitterSystemProvider.swift in Sources */,
 				0B972AD61ED4692D001853CF /* UIViewController+Hierarchy.swift in Sources */,
 				0B972AD41ED4692D001853CF /* String+Hashing.swift in Sources */,
+				0B4E16F21EE0762B00206B57 /* UserAgentService.swift in Sources */,
 				0B972AD91ED4692D001853CF /* Extensible.swift in Sources */,
 				0B972AD71ED4692D001853CF /* URLRequest+OAuth.swift in Sources */,
 				0B972AE91ED46FE2001853CF /* DebugService.swift in Sources */,
@@ -387,6 +410,7 @@
 				0B972ADF1ED4692D001853CF /* TwitterProvider.swift in Sources */,
 				0B972AE51ED4692D001853CF /* AuthorizeError.swift in Sources */,
 				0B972AE31ED4692D001853CF /* WebRequestService.swift in Sources */,
+				0BC0CA3D1EE0032D00A2734F /* GoogleProvider.swift in Sources */,
 				0B972AD81ED4692D001853CF /* URLSession+Resuming.swift in Sources */,
 				0B972AE61ED4692D001853CF /* Session.swift in Sources */,
 				0B972AD11ED4692D001853CF /* Dictionary+Transforming.swift in Sources */,

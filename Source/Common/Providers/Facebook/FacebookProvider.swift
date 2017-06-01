@@ -22,7 +22,7 @@ public class FacebookProvider: Provider {
         super.init()
         
         guard options["appId"] != nil else {
-            LogService.output("There is no app id in \(name).plist file")
+            DebugService.output("There is no app id in \(name).plist file")
             return nil
         }
     }
@@ -37,7 +37,7 @@ public class FacebookProvider: Provider {
                 let account = try? JSONSerialization.jsonObject(with: data) as! [String: Any] else {
                     
                     if error == nil {
-                        LogService.output(AuthorizeError.parseMessage)
+                        DebugService.output(AuthorizeError.parseMessage)
                     }
                     
                     completion(nil, error ?? AuthorizeError.parse)

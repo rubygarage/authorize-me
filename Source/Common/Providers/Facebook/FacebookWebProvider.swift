@@ -11,7 +11,7 @@ import Foundation
 public class FacebookWebProvider: FacebookProvider {
     
     public override func authorize(_ completion: @escaping Providing.Completion) {
-        deleteAssociatedCookies()
+        CookieStorageService.deleteCookies(withDomainLike: "facebook")
         
         accessToken { [unowned self] accessToken, error in
             guard let accessToken = accessToken as? [String: String] else {
@@ -20,18 +20,6 @@ public class FacebookWebProvider: FacebookProvider {
             }
             
             self.account(withAccessToken: accessToken, completion: completion)
-        }
-    }
-    
-    private func deleteAssociatedCookies() {
-        guard let cookies = HTTPCookieStorage.shared.cookies else {
-            return
-        }
-        
-        cookies.forEach { cookie in
-            if cookie.domain == ".facebook.com" {
-                HTTPCookieStorage.shared.deleteCookie(cookie)
-            }
         }
     }
 
@@ -51,10 +39,10 @@ public class FacebookWebProvider: FacebookProvider {
                 
                 completion(nil, AuthorizeError.cancel)
             } else if let parameters = url!.absoluteString.components(separatedBy: "#").last,
-                let token = parameters.dictionary["access_token"],
-                let expire = parameters.dictionary["expires_in"] {
+                parameters.dictionary["access_token"] != nil,
+                parameters.dictionary["expires_in"] != nil {
                 
-                completion(["access_token": token, "expires_in": expire], nil)
+                completion(parameters.dictionary, nil)
             } else {
                 DebugService.output(AuthorizeError.parseMessage)
                 completion(nil, AuthorizeError.parse)

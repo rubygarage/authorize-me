@@ -15,7 +15,7 @@ extension String {
     }
     
     private var allowedCharacters: CharacterSet {
-        return CharacterSet(charactersIn: "!*'();:@&=+$,/?%#[]").inverted
+        return CharacterSet(charactersIn: "!*'();:@&=+$,/?%#[] ").inverted
     }
     
 }
