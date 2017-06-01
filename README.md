@@ -45,10 +45,10 @@ Firstly, import `AuthorizeMe` framework into class in Xcode project.
 import AuthorizeMe
 ````
 
-Then, turn log on for seen error messages of authorization process if needed. Do it in `AppDelegate` class is the best way.
+Then, turn logging on for seen error messages of authorization process if needed. Do it in `AppDelegate` class is the best way.
 
 ````swift
-LogService.turnLogOn()
+DebugService.isNeedOutput = true
 ````
 
 Finally, use `Authorize` manager that authorize user with `SystemProvider` if it possible, but in other case manager authorize user with `WebProvider`.

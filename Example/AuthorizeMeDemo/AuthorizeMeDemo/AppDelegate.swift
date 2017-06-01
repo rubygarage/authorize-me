@@ -22,7 +22,7 @@ extension AppDelegate: UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        LogService.turnLogOn()
+        DebugService.isNeedOutput = true
         return true
     }
     

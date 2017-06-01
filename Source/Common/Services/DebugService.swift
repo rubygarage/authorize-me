@@ -8,17 +8,13 @@
 
 import Foundation
 
-public struct LogService {
+public struct DebugService {
     
-    static var isLogOn = false
-    
-    public static func turnLogOn() {
-        LogService.isLogOn = true
-    }
+    public static var isNeedOutput = false
     
     static func output(_ message: String) {
         #if DEBUG
-            if isLogOn {
+            if isNeedOutput {
                 print("AuthorizeMe: \(message)")
             }
         #endif

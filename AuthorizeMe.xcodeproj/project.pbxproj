@@ -35,7 +35,7 @@
 		0B972AE51ED4692D001853CF /* AuthorizeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ACC1ED4692D001853CF /* AuthorizeError.swift */; };
 		0B972AE61ED4692D001853CF /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ACD1ED4692D001853CF /* Session.swift */; };
 		0B972AE71ED4692D001853CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ACE1ED4692D001853CF /* User.swift */; };
-		0B972AE91ED46FE2001853CF /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AE81ED46FE2001853CF /* LogService.swift */; };
+		0B972AE91ED46FE2001853CF /* DebugService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AE81ED46FE2001853CF /* DebugService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +81,7 @@
 		0B972ACC1ED4692D001853CF /* AuthorizeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeError.swift; sourceTree = "<group>"; };
 		0B972ACD1ED4692D001853CF /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		0B972ACE1ED4692D001853CF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		0B972AE81ED46FE2001853CF /* LogService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
+		0B972AE81ED46FE2001853CF /* DebugService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,7 +229,7 @@
 		0B972AC41ED4692D001853CF /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0B972AE81ED46FE2001853CF /* LogService.swift */,
+				0B972AE81ED46FE2001853CF /* DebugService.swift */,
 				0B972AC51ED4692D001853CF /* AlertService.swift */,
 				0B972AC61ED4692D001853CF /* WebRequestService.swift */,
 			);
@@ -380,7 +380,7 @@
 				0B972AD41ED4692D001853CF /* String+Hashing.swift in Sources */,
 				0B972AD91ED4692D001853CF /* Extensible.swift in Sources */,
 				0B972AD71ED4692D001853CF /* URLRequest+OAuth.swift in Sources */,
-				0B972AE91ED46FE2001853CF /* LogService.swift in Sources */,
+				0B972AE91ED46FE2001853CF /* DebugService.swift in Sources */,
 				0B972ADB1ED4692D001853CF /* FacebookProvider.swift in Sources */,
 				0B972AD01ED4692D001853CF /* ACAccountStore+Access.swift in Sources */,
 				0B972AE21ED4692D001853CF /* AlertService.swift in Sources */,
