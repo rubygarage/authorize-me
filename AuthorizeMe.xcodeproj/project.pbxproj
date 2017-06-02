@@ -11,6 +11,8 @@
 		0B4E16F21EE0762B00206B57 /* UserAgentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E16F01EE0762B00206B57 /* UserAgentService.swift */; };
 		0B8F402D1EE1624A003055F9 /* InstagramProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F402B1EE1624A003055F9 /* InstagramProvider.swift */; };
 		0B8F402E1EE1624A003055F9 /* InstagramWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F402C1EE1624A003055F9 /* InstagramWebProvider.swift */; };
+		0B8F40321EE163DF003055F9 /* LinkedInProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F40301EE163DF003055F9 /* LinkedInProvider.swift */; };
+		0B8F40331EE163DF003055F9 /* LinkedInWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F40311EE163DF003055F9 /* LinkedInWebProvider.swift */; };
 		0B972A981ED468A5001853CF /* AuthorizeMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */; };
 		0B972A9D1ED468A5001853CF /* AuthorizeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972A9C1ED468A5001853CF /* AuthorizeMeTests.swift */; };
 		0B972AA91ED46927001853CF /* AuthorizeMe.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0B972AA81ED46927001853CF /* AuthorizeMe.podspec */; };
@@ -60,6 +62,8 @@
 		0B4E16F01EE0762B00206B57 /* UserAgentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAgentService.swift; sourceTree = "<group>"; };
 		0B8F402B1EE1624A003055F9 /* InstagramProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramProvider.swift; sourceTree = "<group>"; };
 		0B8F402C1EE1624A003055F9 /* InstagramWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramWebProvider.swift; sourceTree = "<group>"; };
+		0B8F40301EE163DF003055F9 /* LinkedInProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedInProvider.swift; sourceTree = "<group>"; };
+		0B8F40311EE163DF003055F9 /* LinkedInWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedInWebProvider.swift; sourceTree = "<group>"; };
 		0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthorizeMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B972A921ED468A4001853CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B972A971ED468A5001853CF /* AuthorizeMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthorizeMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +134,15 @@
 				0B8F402C1EE1624A003055F9 /* InstagramWebProvider.swift */,
 			);
 			path = Instagram;
+			sourceTree = "<group>";
+		};
+		0B8F402F1EE163DF003055F9 /* LinkedIn */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F40301EE163DF003055F9 /* LinkedInProvider.swift */,
+				0B8F40311EE163DF003055F9 /* LinkedInWebProvider.swift */,
+			);
+			path = LinkedIn;
 			sourceTree = "<group>";
 		};
 		0B972A841ED468A4001853CF = {
@@ -225,6 +238,7 @@
 				0B972AC01ED4692D001853CF /* Twitter */,
 				0BC0CA341EE0032D00A2734F /* Google */,
 				0B8F402A1EE1624A003055F9 /* Instagram */,
+				0B8F402F1EE163DF003055F9 /* LinkedIn */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -424,12 +438,14 @@
 				0B972AD01ED4692D001853CF /* ACAccountStore+Access.swift in Sources */,
 				0B972AE21ED4692D001853CF /* AlertService.swift in Sources */,
 				0B972ADF1ED4692D001853CF /* TwitterProvider.swift in Sources */,
+				0B8F40321EE163DF003055F9 /* LinkedInProvider.swift in Sources */,
 				0B972AE51ED4692D001853CF /* AuthorizeError.swift in Sources */,
 				0B972AE31ED4692D001853CF /* WebRequestService.swift in Sources */,
 				0BC0CA3D1EE0032D00A2734F /* GoogleProvider.swift in Sources */,
 				0B972AD81ED4692D001853CF /* URLSession+Resuming.swift in Sources */,
 				0B972AE61ED4692D001853CF /* Session.swift in Sources */,
 				0B972AD11ED4692D001853CF /* Dictionary+Transforming.swift in Sources */,
+				0B8F40331EE163DF003055F9 /* LinkedInWebProvider.swift in Sources */,
 				0B972AE11ED4692D001853CF /* TwitterWebProvider.swift in Sources */,
 				0B972ADC1ED4692D001853CF /* FacebookSystemProvider.swift in Sources */,
 			);

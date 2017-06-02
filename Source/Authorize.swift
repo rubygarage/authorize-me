@@ -29,6 +29,10 @@ public class Authorize {
             }
         case _ where nameOfProvider == "Google":
             webProvider = GoogleWebProvider()
+        case _ where nameOfProvider == "Instagram":
+            webProvider = InstagramWebProvider()
+        case _ where nameOfProvider == "LinkedIn":
+            webProvider = LinkedInWebProvider()
         default:
             DebugService.output("There is no provider with name \(nameOfProvider)")
         }

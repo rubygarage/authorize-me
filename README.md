@@ -76,4 +76,6 @@ provider.authorize { session, error in
 * **[Facebook Provider](https://github.com/radislavcrechet/AuthorizeMe/wiki/Facebook-Provider)**
 * **[Twitter Provider](https://github.com/radislavcrechet/AuthorizeMe/wiki/Twitter-Provider)**
 * **[Google Provider](https://github.com/radislavcrechet/AuthorizeMe/wiki/Google-Provider)**
+* **[Instagram Provider](https://github.com/radislavcrechet/AuthorizeMe/wiki/Instagram-Provider)**
+* **[LinkedIn Provider](https://github.com/radislavcrechet/AuthorizeMe/wiki/LinkedIn-Provider)**
 * **[Custom Provider](https://github.com/radislavcrechet/AuthorizeMe/wiki/Custom-Provider)**

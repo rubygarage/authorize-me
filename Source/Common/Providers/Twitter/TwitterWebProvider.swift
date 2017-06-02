@@ -17,7 +17,7 @@ public class TwitterWebProvider: TwitterProvider {
                 return
             }
             
-            self.authenticate(withRequestToken: requestToken) { [unowned self] verifierToken, error in
+            self.verifierToken(withRequestToken: requestToken) { [unowned self] verifierToken, error in
                 guard let verifierToken = verifierToken as? String else {
                     completion(nil, error)
                     return
@@ -59,7 +59,7 @@ public class TwitterWebProvider: TwitterProvider {
         }
     }
     
-    private func authenticate(withRequestToken requestToken: String, _ completion: @escaping URLRequest.Completion) {
+    private func verifierToken(withRequestToken requestToken: String, _ completion: @escaping URLRequest.Completion) {
         let parameters = ["oauth_token": requestToken, "force_login": "true"]
         let url = "https://api.twitter.com/oauth/authenticate?\(parameters.string)"
         let request = URLRequest(url: URL(string: url)!)

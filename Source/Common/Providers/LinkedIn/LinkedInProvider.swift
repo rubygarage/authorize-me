@@ -1,6 +1,6 @@
 //
-//  GoogleProvider.swift
-//  AuthorizeMe
+//  LinkedInProvider.swift
+//  AuthorizeMeDemo
 //
 //  Created by Radislav Crechet on 6/1/17.
 //  Copyright © 2017 RubyGarage. All rights reserved.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-public class GoogleProvider: Provider {
+public class LinkedInProvider: Provider {
     
     typealias Client = (id: String, secret: String)
     
     public override var name: String {
-        return "Google"
+        return "LinkedIn"
     }
     
     var client: Client {
