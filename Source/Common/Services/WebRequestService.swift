@@ -19,8 +19,7 @@ public struct WebRequestService {
         providerController.redirectUri = provider.redirectUri
         providerController.completion = completion
         
-        let topViewController = UIViewController.top
-        topViewController.present(providerController, animated: true)
+        UIViewController.top.present(providerController, animated: true)
     }
     
 }

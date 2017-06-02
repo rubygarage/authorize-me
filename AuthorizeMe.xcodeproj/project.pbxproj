@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0B4E16F11EE0762B00206B57 /* CookieStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E16EF1EE0762B00206B57 /* CookieStorageService.swift */; };
 		0B4E16F21EE0762B00206B57 /* UserAgentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E16F01EE0762B00206B57 /* UserAgentService.swift */; };
+		0B8F402D1EE1624A003055F9 /* InstagramProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F402B1EE1624A003055F9 /* InstagramProvider.swift */; };
+		0B8F402E1EE1624A003055F9 /* InstagramWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F402C1EE1624A003055F9 /* InstagramWebProvider.swift */; };
 		0B972A981ED468A5001853CF /* AuthorizeMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */; };
 		0B972A9D1ED468A5001853CF /* AuthorizeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972A9C1ED468A5001853CF /* AuthorizeMeTests.swift */; };
 		0B972AA91ED46927001853CF /* AuthorizeMe.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0B972AA81ED46927001853CF /* AuthorizeMe.podspec */; };
@@ -56,6 +58,8 @@
 		0B2155041ED5B2FE0084A5C8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		0B4E16EF1EE0762B00206B57 /* CookieStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookieStorageService.swift; sourceTree = "<group>"; };
 		0B4E16F01EE0762B00206B57 /* UserAgentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAgentService.swift; sourceTree = "<group>"; };
+		0B8F402B1EE1624A003055F9 /* InstagramProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramProvider.swift; sourceTree = "<group>"; };
+		0B8F402C1EE1624A003055F9 /* InstagramWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramWebProvider.swift; sourceTree = "<group>"; };
 		0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthorizeMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B972A921ED468A4001853CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B972A971ED468A5001853CF /* AuthorizeMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthorizeMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,15 @@
 				0B2155041ED5B2FE0084A5C8 /* module.modulemap */,
 			);
 			path = CommonCrypto;
+			sourceTree = "<group>";
+		};
+		0B8F402A1EE1624A003055F9 /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F402B1EE1624A003055F9 /* InstagramProvider.swift */,
+				0B8F402C1EE1624A003055F9 /* InstagramWebProvider.swift */,
+			);
+			path = Instagram;
 			sourceTree = "<group>";
 		};
 		0B972A841ED468A4001853CF = {
@@ -211,6 +224,7 @@
 				0B972ABB1ED4692D001853CF /* Facebook */,
 				0B972AC01ED4692D001853CF /* Twitter */,
 				0BC0CA341EE0032D00A2734F /* Google */,
+				0B8F402A1EE1624A003055F9 /* Instagram */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -390,7 +404,9 @@
 				0B972ACF1ED4692D001853CF /* Authorize.swift in Sources */,
 				0B972AE41ED4692D001853CF /* ProviderController.swift in Sources */,
 				0B972AE71ED4692D001853CF /* User.swift in Sources */,
+				0B8F402E1EE1624A003055F9 /* InstagramWebProvider.swift in Sources */,
 				0B972ADD1ED4692D001853CF /* FacebookWebProvider.swift in Sources */,
+				0B8F402D1EE1624A003055F9 /* InstagramProvider.swift in Sources */,
 				0B972AD31ED4692D001853CF /* String+Encoding.swift in Sources */,
 				0B972ADE1ED4692D001853CF /* Provider.swift in Sources */,
 				0B972AD21ED4692D001853CF /* SLRequest+Performing.swift in Sources */,
