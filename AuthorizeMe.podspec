@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name             = "AuthorizeMe"
   s.summary          = "Authorization with social networks"
-  s.version          = "1.1.1"
+  s.version          = "1.1.2"
   s.homepage         = "https://github.com/radislavcrechet/AuthorizeMe"
   s.license          = 'MIT'
   s.author           = { "RubyGarage" => "vlad@rubygarage.org" }
@@ -23,42 +23,42 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |ss|
 
-    ss.source_files = 'Core'
+    ss.source_files = 'Core/**/*.swift'
 
   end
 
   s.subspec 'Facebook' do |ss|
 
     ss.dependency 'AuthorizeMe/Core'
-    ss.source_files = 'Providers/Facebook'
+    ss.source_files = 'Providers/Facebook/*.swift'
 
   end
 
   s.subspec 'Twitter' do |ss|
 
     ss.dependency 'AuthorizeMe/Core'
-    ss.source_files = 'Providers/Twitter'
+    ss.source_files = 'Providers/Twitter/*.swift'
 
   end
 
   s.subspec 'Google' do |ss|
 
     ss.dependency 'AuthorizeMe/Core'
-    ss.source_files = 'Providers/Google'
+    ss.source_files = 'Providers/Google/*.swift'
 
   end
 
   s.subspec 'Instagram' do |ss|
 
     ss.dependency 'AuthorizeMe/Core'
-    ss.source_files = 'Providers/Instagram'
+    ss.source_files = 'Providers/Instagram/*.swift'
 
   end
 
   s.subspec 'LinkedIn' do |ss|
 
     ss.dependency 'AuthorizeMe/Core'
-    ss.source_files = 'Providers/LinkedIn'
+    ss.source_files = 'Providers/LinkedIn/*.swift'
 
   end
 
