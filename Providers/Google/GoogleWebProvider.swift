@@ -109,7 +109,7 @@ public class GoogleWebProvider: GoogleProvider {
             }
             
             let user = User(id: "\(account["id"]!)",
-                name: account["given_name"] as! String,
+                name: account["name"] as! String,
                 additions: account)
             
             let session = Session(token: accessToken["access_token"]! as! String,

@@ -24,4 +24,8 @@ public enum AuthorizeError: Error {
         return "There is wrong parse of network response"
     }
     
+    public static var deprecateMessage: String {
+        return "The identifiers for system account types were deprecated"
+    }
+    
 }

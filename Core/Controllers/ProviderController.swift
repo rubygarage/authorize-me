@@ -38,6 +38,7 @@ class ProviderController: UINavigationController {
     private func configureWebViewController() {
         webViewController = UIViewController()
         webViewController.view.frame = view.bounds
+        webViewController.title = title
         
         webViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: cancelButtonTitle,
                                                                              style: .plain,

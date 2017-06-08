@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B4E16F11EE0762B00206B57 /* CookieStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E16EF1EE0762B00206B57 /* CookieStorageService.swift */; };
-		0B4E16F21EE0762B00206B57 /* UserAgentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E16F01EE0762B00206B57 /* UserAgentService.swift */; };
-		0B8F402D1EE1624A003055F9 /* InstagramProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F402B1EE1624A003055F9 /* InstagramProvider.swift */; };
-		0B8F402E1EE1624A003055F9 /* InstagramWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F402C1EE1624A003055F9 /* InstagramWebProvider.swift */; };
-		0B8F40321EE163DF003055F9 /* LinkedInProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F40301EE163DF003055F9 /* LinkedInProvider.swift */; };
-		0B8F40331EE163DF003055F9 /* LinkedInWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F40311EE163DF003055F9 /* LinkedInWebProvider.swift */; };
 		0B972A981ED468A5001853CF /* AuthorizeMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */; };
 		0B972A9D1ED468A5001853CF /* AuthorizeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972A9C1ED468A5001853CF /* AuthorizeMeTests.swift */; };
 		0B972AA91ED46927001853CF /* AuthorizeMe.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0B972AA81ED46927001853CF /* AuthorizeMe.podspec */; };
-		0B972ACF1ED4692D001853CF /* Authorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AAB1ED4692D001853CF /* Authorize.swift */; };
-		0B972AD01ED4692D001853CF /* ACAccountStore+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AAE1ED4692D001853CF /* ACAccountStore+Access.swift */; };
-		0B972AD11ED4692D001853CF /* Dictionary+Transforming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AAF1ED4692D001853CF /* Dictionary+Transforming.swift */; };
-		0B972AD21ED4692D001853CF /* SLRequest+Performing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AB01ED4692D001853CF /* SLRequest+Performing.swift */; };
-		0B972AD31ED4692D001853CF /* String+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AB11ED4692D001853CF /* String+Encoding.swift */; };
-		0B972AD41ED4692D001853CF /* String+Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AB21ED4692D001853CF /* String+Hashing.swift */; };
-		0B972AD51ED4692D001853CF /* String+Transforming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AB31ED4692D001853CF /* String+Transforming.swift */; };
-		0B972AD61ED4692D001853CF /* UIViewController+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AB41ED4692D001853CF /* UIViewController+Hierarchy.swift */; };
-		0B972AD71ED4692D001853CF /* URLRequest+OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AB51ED4692D001853CF /* URLRequest+OAuth.swift */; };
-		0B972AD81ED4692D001853CF /* URLSession+Resuming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AB61ED4692D001853CF /* URLSession+Resuming.swift */; };
-		0B972AD91ED4692D001853CF /* Extensible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AB81ED4692D001853CF /* Extensible.swift */; };
-		0B972ADA1ED4692D001853CF /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AB91ED4692D001853CF /* Providing.swift */; };
-		0B972ADB1ED4692D001853CF /* FacebookProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ABC1ED4692D001853CF /* FacebookProvider.swift */; };
-		0B972ADC1ED4692D001853CF /* FacebookSystemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ABD1ED4692D001853CF /* FacebookSystemProvider.swift */; };
-		0B972ADD1ED4692D001853CF /* FacebookWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ABE1ED4692D001853CF /* FacebookWebProvider.swift */; };
-		0B972ADE1ED4692D001853CF /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ABF1ED4692D001853CF /* Provider.swift */; };
-		0B972ADF1ED4692D001853CF /* TwitterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AC11ED4692D001853CF /* TwitterProvider.swift */; };
-		0B972AE01ED4692D001853CF /* TwitterSystemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AC21ED4692D001853CF /* TwitterSystemProvider.swift */; };
-		0B972AE11ED4692D001853CF /* TwitterWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AC31ED4692D001853CF /* TwitterWebProvider.swift */; };
-		0B972AE21ED4692D001853CF /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AC51ED4692D001853CF /* AlertService.swift */; };
-		0B972AE31ED4692D001853CF /* WebRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AC61ED4692D001853CF /* WebRequestService.swift */; };
-		0B972AE41ED4692D001853CF /* ProviderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ACA1ED4692D001853CF /* ProviderController.swift */; };
-		0B972AE51ED4692D001853CF /* AuthorizeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ACC1ED4692D001853CF /* AuthorizeError.swift */; };
-		0B972AE61ED4692D001853CF /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ACD1ED4692D001853CF /* Session.swift */; };
-		0B972AE71ED4692D001853CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972ACE1ED4692D001853CF /* User.swift */; };
-		0B972AE91ED46FE2001853CF /* DebugService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972AE81ED46FE2001853CF /* DebugService.swift */; };
-		0BC0CA3D1EE0032D00A2734F /* GoogleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0CA351EE0032D00A2734F /* GoogleProvider.swift */; };
-		0BC0CA3E1EE0032D00A2734F /* GoogleWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC0CA361EE0032D00A2734F /* GoogleWebProvider.swift */; };
+		0BBF83B01EE99AEF0000782E /* Authorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83801EE99AEF0000782E /* Authorize.swift */; };
+		0BBF83B11EE99AEF0000782E /* ACAccountStore+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83831EE99AEF0000782E /* ACAccountStore+Access.swift */; };
+		0BBF83B21EE99AEF0000782E /* Dictionary+Transforming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83841EE99AEF0000782E /* Dictionary+Transforming.swift */; };
+		0BBF83B31EE99AEF0000782E /* SLRequest+Performing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83851EE99AEF0000782E /* SLRequest+Performing.swift */; };
+		0BBF83B41EE99AEF0000782E /* String+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83861EE99AEF0000782E /* String+Encoding.swift */; };
+		0BBF83B51EE99AEF0000782E /* String+Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83871EE99AEF0000782E /* String+Hashing.swift */; };
+		0BBF83B61EE99AEF0000782E /* String+Transforming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83881EE99AEF0000782E /* String+Transforming.swift */; };
+		0BBF83B71EE99AEF0000782E /* UIViewController+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83891EE99AEF0000782E /* UIViewController+Hierarchy.swift */; };
+		0BBF83B81EE99AEF0000782E /* URLRequest+OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF838A1EE99AEF0000782E /* URLRequest+OAuth.swift */; };
+		0BBF83B91EE99AEF0000782E /* URLSession+Resuming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF838B1EE99AEF0000782E /* URLSession+Resuming.swift */; };
+		0BBF83BA1EE99AEF0000782E /* Extensible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF838D1EE99AEF0000782E /* Extensible.swift */; };
+		0BBF83BB1EE99AEF0000782E /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF838E1EE99AEF0000782E /* Providing.swift */; };
+		0BBF83BC1EE99AEF0000782E /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83901EE99AEF0000782E /* AlertService.swift */; };
+		0BBF83BD1EE99AEF0000782E /* CookieStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83911EE99AEF0000782E /* CookieStorageService.swift */; };
+		0BBF83BE1EE99AEF0000782E /* DebugService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83921EE99AEF0000782E /* DebugService.swift */; };
+		0BBF83BF1EE99AEF0000782E /* UserAgentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83931EE99AEF0000782E /* UserAgentService.swift */; };
+		0BBF83C01EE99AEF0000782E /* WebRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83941EE99AEF0000782E /* WebRequestService.swift */; };
+		0BBF83C11EE99AEF0000782E /* ProviderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83981EE99AEF0000782E /* ProviderController.swift */; };
+		0BBF83C21EE99AEF0000782E /* AuthorizeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF839A1EE99AEF0000782E /* AuthorizeError.swift */; };
+		0BBF83C31EE99AEF0000782E /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF839B1EE99AEF0000782E /* Session.swift */; };
+		0BBF83C41EE99AEF0000782E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF839C1EE99AEF0000782E /* User.swift */; };
+		0BBF83C51EE99AEF0000782E /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF839D1EE99AEF0000782E /* Provider.swift */; };
+		0BBF83C61EE99AEF0000782E /* FacebookProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83A01EE99AEF0000782E /* FacebookProvider.swift */; };
+		0BBF83C71EE99AEF0000782E /* FacebookSystemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83A11EE99AEF0000782E /* FacebookSystemProvider.swift */; };
+		0BBF83C81EE99AEF0000782E /* FacebookWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83A21EE99AEF0000782E /* FacebookWebProvider.swift */; };
+		0BBF83C91EE99AEF0000782E /* GoogleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83A41EE99AEF0000782E /* GoogleProvider.swift */; };
+		0BBF83CA1EE99AEF0000782E /* GoogleWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83A51EE99AEF0000782E /* GoogleWebProvider.swift */; };
+		0BBF83CB1EE99AEF0000782E /* InstagramProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83A71EE99AEF0000782E /* InstagramProvider.swift */; };
+		0BBF83CC1EE99AEF0000782E /* InstagramWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83A81EE99AEF0000782E /* InstagramWebProvider.swift */; };
+		0BBF83CD1EE99AEF0000782E /* LinkedInProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83AA1EE99AEF0000782E /* LinkedInProvider.swift */; };
+		0BBF83CE1EE99AEF0000782E /* LinkedInWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83AB1EE99AEF0000782E /* LinkedInWebProvider.swift */; };
+		0BBF83CF1EE99AEF0000782E /* TwitterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83AD1EE99AEF0000782E /* TwitterProvider.swift */; };
+		0BBF83D01EE99AEF0000782E /* TwitterSystemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83AE1EE99AEF0000782E /* TwitterSystemProvider.swift */; };
+		0BBF83D11EE99AEF0000782E /* TwitterWebProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF83AF1EE99AEF0000782E /* TwitterWebProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,47 +57,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B2155041ED5B2FE0084A5C8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		0B4E16EF1EE0762B00206B57 /* CookieStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookieStorageService.swift; sourceTree = "<group>"; };
-		0B4E16F01EE0762B00206B57 /* UserAgentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAgentService.swift; sourceTree = "<group>"; };
-		0B8F402B1EE1624A003055F9 /* InstagramProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramProvider.swift; sourceTree = "<group>"; };
-		0B8F402C1EE1624A003055F9 /* InstagramWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramWebProvider.swift; sourceTree = "<group>"; };
-		0B8F40301EE163DF003055F9 /* LinkedInProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedInProvider.swift; sourceTree = "<group>"; };
-		0B8F40311EE163DF003055F9 /* LinkedInWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedInWebProvider.swift; sourceTree = "<group>"; };
 		0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthorizeMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B972A921ED468A4001853CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B972A971ED468A5001853CF /* AuthorizeMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthorizeMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B972A9C1ED468A5001853CF /* AuthorizeMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeMeTests.swift; sourceTree = "<group>"; };
 		0B972A9E1ED468A5001853CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B972AA81ED46927001853CF /* AuthorizeMe.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AuthorizeMe.podspec; sourceTree = "<group>"; };
-		0B972AAB1ED4692D001853CF /* Authorize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorize.swift; sourceTree = "<group>"; };
-		0B972AAE1ED4692D001853CF /* ACAccountStore+Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ACAccountStore+Access.swift"; sourceTree = "<group>"; };
-		0B972AAF1ED4692D001853CF /* Dictionary+Transforming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Transforming.swift"; sourceTree = "<group>"; };
-		0B972AB01ED4692D001853CF /* SLRequest+Performing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SLRequest+Performing.swift"; sourceTree = "<group>"; };
-		0B972AB11ED4692D001853CF /* String+Encoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Encoding.swift"; sourceTree = "<group>"; };
-		0B972AB21ED4692D001853CF /* String+Hashing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Hashing.swift"; sourceTree = "<group>"; };
-		0B972AB31ED4692D001853CF /* String+Transforming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Transforming.swift"; sourceTree = "<group>"; };
-		0B972AB41ED4692D001853CF /* UIViewController+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hierarchy.swift"; sourceTree = "<group>"; };
-		0B972AB51ED4692D001853CF /* URLRequest+OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+OAuth.swift"; sourceTree = "<group>"; };
-		0B972AB61ED4692D001853CF /* URLSession+Resuming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Resuming.swift"; sourceTree = "<group>"; };
-		0B972AB81ED4692D001853CF /* Extensible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensible.swift; sourceTree = "<group>"; };
-		0B972AB91ED4692D001853CF /* Providing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Providing.swift; sourceTree = "<group>"; };
-		0B972ABC1ED4692D001853CF /* FacebookProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookProvider.swift; sourceTree = "<group>"; };
-		0B972ABD1ED4692D001853CF /* FacebookSystemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookSystemProvider.swift; sourceTree = "<group>"; };
-		0B972ABE1ED4692D001853CF /* FacebookWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookWebProvider.swift; sourceTree = "<group>"; };
-		0B972ABF1ED4692D001853CF /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
-		0B972AC11ED4692D001853CF /* TwitterProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterProvider.swift; sourceTree = "<group>"; };
-		0B972AC21ED4692D001853CF /* TwitterSystemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterSystemProvider.swift; sourceTree = "<group>"; };
-		0B972AC31ED4692D001853CF /* TwitterWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterWebProvider.swift; sourceTree = "<group>"; };
-		0B972AC51ED4692D001853CF /* AlertService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
-		0B972AC61ED4692D001853CF /* WebRequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRequestService.swift; sourceTree = "<group>"; };
-		0B972ACA1ED4692D001853CF /* ProviderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderController.swift; sourceTree = "<group>"; };
-		0B972ACC1ED4692D001853CF /* AuthorizeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeError.swift; sourceTree = "<group>"; };
-		0B972ACD1ED4692D001853CF /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		0B972ACE1ED4692D001853CF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		0B972AE81ED46FE2001853CF /* DebugService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugService.swift; sourceTree = "<group>"; };
-		0BC0CA351EE0032D00A2734F /* GoogleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleProvider.swift; sourceTree = "<group>"; };
-		0BC0CA361EE0032D00A2734F /* GoogleWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleWebProvider.swift; sourceTree = "<group>"; };
+		0BBF83801EE99AEF0000782E /* Authorize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorize.swift; sourceTree = "<group>"; };
+		0BBF83831EE99AEF0000782E /* ACAccountStore+Access.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ACAccountStore+Access.swift"; sourceTree = "<group>"; };
+		0BBF83841EE99AEF0000782E /* Dictionary+Transforming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Transforming.swift"; sourceTree = "<group>"; };
+		0BBF83851EE99AEF0000782E /* SLRequest+Performing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SLRequest+Performing.swift"; sourceTree = "<group>"; };
+		0BBF83861EE99AEF0000782E /* String+Encoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Encoding.swift"; sourceTree = "<group>"; };
+		0BBF83871EE99AEF0000782E /* String+Hashing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Hashing.swift"; sourceTree = "<group>"; };
+		0BBF83881EE99AEF0000782E /* String+Transforming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Transforming.swift"; sourceTree = "<group>"; };
+		0BBF83891EE99AEF0000782E /* UIViewController+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hierarchy.swift"; sourceTree = "<group>"; };
+		0BBF838A1EE99AEF0000782E /* URLRequest+OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+OAuth.swift"; sourceTree = "<group>"; };
+		0BBF838B1EE99AEF0000782E /* URLSession+Resuming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Resuming.swift"; sourceTree = "<group>"; };
+		0BBF838D1EE99AEF0000782E /* Extensible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensible.swift; sourceTree = "<group>"; };
+		0BBF838E1EE99AEF0000782E /* Providing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Providing.swift; sourceTree = "<group>"; };
+		0BBF83901EE99AEF0000782E /* AlertService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		0BBF83911EE99AEF0000782E /* CookieStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookieStorageService.swift; sourceTree = "<group>"; };
+		0BBF83921EE99AEF0000782E /* DebugService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugService.swift; sourceTree = "<group>"; };
+		0BBF83931EE99AEF0000782E /* UserAgentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAgentService.swift; sourceTree = "<group>"; };
+		0BBF83941EE99AEF0000782E /* WebRequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRequestService.swift; sourceTree = "<group>"; };
+		0BBF83961EE99AEF0000782E /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		0BBF83981EE99AEF0000782E /* ProviderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderController.swift; sourceTree = "<group>"; };
+		0BBF839A1EE99AEF0000782E /* AuthorizeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeError.swift; sourceTree = "<group>"; };
+		0BBF839B1EE99AEF0000782E /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		0BBF839C1EE99AEF0000782E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0BBF839D1EE99AEF0000782E /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		0BBF83A01EE99AEF0000782E /* FacebookProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookProvider.swift; sourceTree = "<group>"; };
+		0BBF83A11EE99AEF0000782E /* FacebookSystemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookSystemProvider.swift; sourceTree = "<group>"; };
+		0BBF83A21EE99AEF0000782E /* FacebookWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookWebProvider.swift; sourceTree = "<group>"; };
+		0BBF83A41EE99AEF0000782E /* GoogleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleProvider.swift; sourceTree = "<group>"; };
+		0BBF83A51EE99AEF0000782E /* GoogleWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleWebProvider.swift; sourceTree = "<group>"; };
+		0BBF83A71EE99AEF0000782E /* InstagramProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramProvider.swift; sourceTree = "<group>"; };
+		0BBF83A81EE99AEF0000782E /* InstagramWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramWebProvider.swift; sourceTree = "<group>"; };
+		0BBF83AA1EE99AEF0000782E /* LinkedInProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedInProvider.swift; sourceTree = "<group>"; };
+		0BBF83AB1EE99AEF0000782E /* LinkedInWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedInWebProvider.swift; sourceTree = "<group>"; };
+		0BBF83AD1EE99AEF0000782E /* TwitterProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterProvider.swift; sourceTree = "<group>"; };
+		0BBF83AE1EE99AEF0000782E /* TwitterSystemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterSystemProvider.swift; sourceTree = "<group>"; };
+		0BBF83AF1EE99AEF0000782E /* TwitterWebProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterWebProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,38 +119,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B2155031ED5B2FE0084A5C8 /* CommonCrypto */ = {
-			isa = PBXGroup;
-			children = (
-				0B2155041ED5B2FE0084A5C8 /* module.modulemap */,
-			);
-			path = CommonCrypto;
-			sourceTree = "<group>";
-		};
-		0B8F402A1EE1624A003055F9 /* Instagram */ = {
-			isa = PBXGroup;
-			children = (
-				0B8F402B1EE1624A003055F9 /* InstagramProvider.swift */,
-				0B8F402C1EE1624A003055F9 /* InstagramWebProvider.swift */,
-			);
-			path = Instagram;
-			sourceTree = "<group>";
-		};
-		0B8F402F1EE163DF003055F9 /* LinkedIn */ = {
-			isa = PBXGroup;
-			children = (
-				0B8F40301EE163DF003055F9 /* LinkedInProvider.swift */,
-				0B8F40311EE163DF003055F9 /* LinkedInWebProvider.swift */,
-			);
-			path = LinkedIn;
-			sourceTree = "<group>";
-		};
 		0B972A841ED468A4001853CF = {
 			isa = PBXGroup;
 			children = (
 				0B972AA81ED46927001853CF /* AuthorizeMe.podspec */,
 				0B972A901ED468A4001853CF /* AuthorizeMe */,
-				0B972AAA1ED4692D001853CF /* Source */,
+				0BBF837F1EE99AEF0000782E /* Core */,
+				0BBF839E1EE99AEF0000782E /* Providers */,
 				0B972A9B1ED468A5001853CF /* AuthorizeMeTests */,
 				0B972A8F1ED468A4001853CF /* Products */,
 			);
@@ -182,124 +157,149 @@
 			path = AuthorizeMeTests;
 			sourceTree = "<group>";
 		};
-		0B972AAA1ED4692D001853CF /* Source */ = {
+		0BBF837F1EE99AEF0000782E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				0B972AAB1ED4692D001853CF /* Authorize.swift */,
-				0B2155031ED5B2FE0084A5C8 /* CommonCrypto */,
-				0B972AAC1ED4692D001853CF /* Common */,
-				0B972ACB1ED4692D001853CF /* Models */,
-				0B972AC91ED4692D001853CF /* Controllers */,
+				0BBF83801EE99AEF0000782E /* Authorize.swift */,
+				0BBF839D1EE99AEF0000782E /* Provider.swift */,
+				0BBF83951EE99AEF0000782E /* CommonCrypto */,
+				0BBF83811EE99AEF0000782E /* Common */,
+				0BBF83991EE99AEF0000782E /* Models */,
+				0BBF83971EE99AEF0000782E /* Controllers */,
 			);
-			path = Source;
+			path = Core;
 			sourceTree = "<group>";
 		};
-		0B972AAC1ED4692D001853CF /* Common */ = {
+		0BBF83811EE99AEF0000782E /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				0B972AAD1ED4692D001853CF /* Extensions */,
-				0B972AB71ED4692D001853CF /* Protocols */,
-				0B972AC41ED4692D001853CF /* Services */,
-				0B972ABA1ED4692D001853CF /* Providers */,
+				0BBF83821EE99AEF0000782E /* Extensions */,
+				0BBF838C1EE99AEF0000782E /* Protocols */,
+				0BBF838F1EE99AEF0000782E /* Services */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		0B972AAD1ED4692D001853CF /* Extensions */ = {
+		0BBF83821EE99AEF0000782E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0B972AB31ED4692D001853CF /* String+Transforming.swift */,
-				0B972AB11ED4692D001853CF /* String+Encoding.swift */,
-				0B972AB21ED4692D001853CF /* String+Hashing.swift */,
-				0B972AAF1ED4692D001853CF /* Dictionary+Transforming.swift */,
-				0B972AB51ED4692D001853CF /* URLRequest+OAuth.swift */,
-				0B972AB61ED4692D001853CF /* URLSession+Resuming.swift */,
-				0B972AAE1ED4692D001853CF /* ACAccountStore+Access.swift */,
-				0B972AB01ED4692D001853CF /* SLRequest+Performing.swift */,
-				0B972AB41ED4692D001853CF /* UIViewController+Hierarchy.swift */,
+				0BBF83861EE99AEF0000782E /* String+Encoding.swift */,
+				0BBF83881EE99AEF0000782E /* String+Transforming.swift */,
+				0BBF83871EE99AEF0000782E /* String+Hashing.swift */,
+				0BBF83841EE99AEF0000782E /* Dictionary+Transforming.swift */,
+				0BBF838A1EE99AEF0000782E /* URLRequest+OAuth.swift */,
+				0BBF838B1EE99AEF0000782E /* URLSession+Resuming.swift */,
+				0BBF83831EE99AEF0000782E /* ACAccountStore+Access.swift */,
+				0BBF83851EE99AEF0000782E /* SLRequest+Performing.swift */,
+				0BBF83891EE99AEF0000782E /* UIViewController+Hierarchy.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		0B972AB71ED4692D001853CF /* Protocols */ = {
+		0BBF838C1EE99AEF0000782E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				0B972AB81ED4692D001853CF /* Extensible.swift */,
-				0B972AB91ED4692D001853CF /* Providing.swift */,
+				0BBF838D1EE99AEF0000782E /* Extensible.swift */,
+				0BBF838E1EE99AEF0000782E /* Providing.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		0B972ABA1ED4692D001853CF /* Providers */ = {
+		0BBF838F1EE99AEF0000782E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0B972ABF1ED4692D001853CF /* Provider.swift */,
-				0B972ABB1ED4692D001853CF /* Facebook */,
-				0B972AC01ED4692D001853CF /* Twitter */,
-				0BC0CA341EE0032D00A2734F /* Google */,
-				0B8F402A1EE1624A003055F9 /* Instagram */,
-				0B8F402F1EE163DF003055F9 /* LinkedIn */,
-			);
-			path = Providers;
-			sourceTree = "<group>";
-		};
-		0B972ABB1ED4692D001853CF /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				0B972ABC1ED4692D001853CF /* FacebookProvider.swift */,
-				0B972ABD1ED4692D001853CF /* FacebookSystemProvider.swift */,
-				0B972ABE1ED4692D001853CF /* FacebookWebProvider.swift */,
-			);
-			path = Facebook;
-			sourceTree = "<group>";
-		};
-		0B972AC01ED4692D001853CF /* Twitter */ = {
-			isa = PBXGroup;
-			children = (
-				0B972AC11ED4692D001853CF /* TwitterProvider.swift */,
-				0B972AC21ED4692D001853CF /* TwitterSystemProvider.swift */,
-				0B972AC31ED4692D001853CF /* TwitterWebProvider.swift */,
-			);
-			path = Twitter;
-			sourceTree = "<group>";
-		};
-		0B972AC41ED4692D001853CF /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				0B972AE81ED46FE2001853CF /* DebugService.swift */,
-				0B972AC51ED4692D001853CF /* AlertService.swift */,
-				0B972AC61ED4692D001853CF /* WebRequestService.swift */,
-				0B4E16F01EE0762B00206B57 /* UserAgentService.swift */,
-				0B4E16EF1EE0762B00206B57 /* CookieStorageService.swift */,
+				0BBF83901EE99AEF0000782E /* AlertService.swift */,
+				0BBF83941EE99AEF0000782E /* WebRequestService.swift */,
+				0BBF83921EE99AEF0000782E /* DebugService.swift */,
+				0BBF83931EE99AEF0000782E /* UserAgentService.swift */,
+				0BBF83911EE99AEF0000782E /* CookieStorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		0B972AC91ED4692D001853CF /* Controllers */ = {
+		0BBF83951EE99AEF0000782E /* CommonCrypto */ = {
 			isa = PBXGroup;
 			children = (
-				0B972ACA1ED4692D001853CF /* ProviderController.swift */,
+				0BBF83961EE99AEF0000782E /* module.modulemap */,
+			);
+			path = CommonCrypto;
+			sourceTree = "<group>";
+		};
+		0BBF83971EE99AEF0000782E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0BBF83981EE99AEF0000782E /* ProviderController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		0B972ACB1ED4692D001853CF /* Models */ = {
+		0BBF83991EE99AEF0000782E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0B972ACD1ED4692D001853CF /* Session.swift */,
-				0B972ACE1ED4692D001853CF /* User.swift */,
-				0B972ACC1ED4692D001853CF /* AuthorizeError.swift */,
+				0BBF839A1EE99AEF0000782E /* AuthorizeError.swift */,
+				0BBF839C1EE99AEF0000782E /* User.swift */,
+				0BBF839B1EE99AEF0000782E /* Session.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		0BC0CA341EE0032D00A2734F /* Google */ = {
+		0BBF839E1EE99AEF0000782E /* Providers */ = {
 			isa = PBXGroup;
 			children = (
-				0BC0CA351EE0032D00A2734F /* GoogleProvider.swift */,
-				0BC0CA361EE0032D00A2734F /* GoogleWebProvider.swift */,
+				0BBF839F1EE99AEF0000782E /* Facebook */,
+				0BBF83AC1EE99AEF0000782E /* Twitter */,
+				0BBF83A31EE99AEF0000782E /* Google */,
+				0BBF83A61EE99AEF0000782E /* Instagram */,
+				0BBF83A91EE99AEF0000782E /* LinkedIn */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		0BBF839F1EE99AEF0000782E /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				0BBF83A01EE99AEF0000782E /* FacebookProvider.swift */,
+				0BBF83A11EE99AEF0000782E /* FacebookSystemProvider.swift */,
+				0BBF83A21EE99AEF0000782E /* FacebookWebProvider.swift */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
+		0BBF83A31EE99AEF0000782E /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				0BBF83A41EE99AEF0000782E /* GoogleProvider.swift */,
+				0BBF83A51EE99AEF0000782E /* GoogleWebProvider.swift */,
 			);
 			path = Google;
+			sourceTree = "<group>";
+		};
+		0BBF83A61EE99AEF0000782E /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				0BBF83A71EE99AEF0000782E /* InstagramProvider.swift */,
+				0BBF83A81EE99AEF0000782E /* InstagramWebProvider.swift */,
+			);
+			path = Instagram;
+			sourceTree = "<group>";
+		};
+		0BBF83A91EE99AEF0000782E /* LinkedIn */ = {
+			isa = PBXGroup;
+			children = (
+				0BBF83AA1EE99AEF0000782E /* LinkedInProvider.swift */,
+				0BBF83AB1EE99AEF0000782E /* LinkedInWebProvider.swift */,
+			);
+			path = LinkedIn;
+			sourceTree = "<group>";
+		};
+		0BBF83AC1EE99AEF0000782E /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				0BBF83AD1EE99AEF0000782E /* TwitterProvider.swift */,
+				0BBF83AE1EE99AEF0000782E /* TwitterSystemProvider.swift */,
+				0BBF83AF1EE99AEF0000782E /* TwitterWebProvider.swift */,
+			);
+			path = Twitter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,40 +414,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B972ADA1ED4692D001853CF /* Providing.swift in Sources */,
-				0B972ACF1ED4692D001853CF /* Authorize.swift in Sources */,
-				0B972AE41ED4692D001853CF /* ProviderController.swift in Sources */,
-				0B972AE71ED4692D001853CF /* User.swift in Sources */,
-				0B8F402E1EE1624A003055F9 /* InstagramWebProvider.swift in Sources */,
-				0B972ADD1ED4692D001853CF /* FacebookWebProvider.swift in Sources */,
-				0B8F402D1EE1624A003055F9 /* InstagramProvider.swift in Sources */,
-				0B972AD31ED4692D001853CF /* String+Encoding.swift in Sources */,
-				0B972ADE1ED4692D001853CF /* Provider.swift in Sources */,
-				0B972AD21ED4692D001853CF /* SLRequest+Performing.swift in Sources */,
-				0BC0CA3E1EE0032D00A2734F /* GoogleWebProvider.swift in Sources */,
-				0B4E16F11EE0762B00206B57 /* CookieStorageService.swift in Sources */,
-				0B972AD51ED4692D001853CF /* String+Transforming.swift in Sources */,
-				0B972AE01ED4692D001853CF /* TwitterSystemProvider.swift in Sources */,
-				0B972AD61ED4692D001853CF /* UIViewController+Hierarchy.swift in Sources */,
-				0B972AD41ED4692D001853CF /* String+Hashing.swift in Sources */,
-				0B4E16F21EE0762B00206B57 /* UserAgentService.swift in Sources */,
-				0B972AD91ED4692D001853CF /* Extensible.swift in Sources */,
-				0B972AD71ED4692D001853CF /* URLRequest+OAuth.swift in Sources */,
-				0B972AE91ED46FE2001853CF /* DebugService.swift in Sources */,
-				0B972ADB1ED4692D001853CF /* FacebookProvider.swift in Sources */,
-				0B972AD01ED4692D001853CF /* ACAccountStore+Access.swift in Sources */,
-				0B972AE21ED4692D001853CF /* AlertService.swift in Sources */,
-				0B972ADF1ED4692D001853CF /* TwitterProvider.swift in Sources */,
-				0B8F40321EE163DF003055F9 /* LinkedInProvider.swift in Sources */,
-				0B972AE51ED4692D001853CF /* AuthorizeError.swift in Sources */,
-				0B972AE31ED4692D001853CF /* WebRequestService.swift in Sources */,
-				0BC0CA3D1EE0032D00A2734F /* GoogleProvider.swift in Sources */,
-				0B972AD81ED4692D001853CF /* URLSession+Resuming.swift in Sources */,
-				0B972AE61ED4692D001853CF /* Session.swift in Sources */,
-				0B972AD11ED4692D001853CF /* Dictionary+Transforming.swift in Sources */,
-				0B8F40331EE163DF003055F9 /* LinkedInWebProvider.swift in Sources */,
-				0B972AE11ED4692D001853CF /* TwitterWebProvider.swift in Sources */,
-				0B972ADC1ED4692D001853CF /* FacebookSystemProvider.swift in Sources */,
+				0BBF83C31EE99AEF0000782E /* Session.swift in Sources */,
+				0BBF83C71EE99AEF0000782E /* FacebookSystemProvider.swift in Sources */,
+				0BBF83BF1EE99AEF0000782E /* UserAgentService.swift in Sources */,
+				0BBF83BB1EE99AEF0000782E /* Providing.swift in Sources */,
+				0BBF83BC1EE99AEF0000782E /* AlertService.swift in Sources */,
+				0BBF83C61EE99AEF0000782E /* FacebookProvider.swift in Sources */,
+				0BBF83B01EE99AEF0000782E /* Authorize.swift in Sources */,
+				0BBF83C91EE99AEF0000782E /* GoogleProvider.swift in Sources */,
+				0BBF83B41EE99AEF0000782E /* String+Encoding.swift in Sources */,
+				0BBF83B31EE99AEF0000782E /* SLRequest+Performing.swift in Sources */,
+				0BBF83B61EE99AEF0000782E /* String+Transforming.swift in Sources */,
+				0BBF83B71EE99AEF0000782E /* UIViewController+Hierarchy.swift in Sources */,
+				0BBF83CD1EE99AEF0000782E /* LinkedInProvider.swift in Sources */,
+				0BBF83D01EE99AEF0000782E /* TwitterSystemProvider.swift in Sources */,
+				0BBF83C11EE99AEF0000782E /* ProviderController.swift in Sources */,
+				0BBF83CF1EE99AEF0000782E /* TwitterProvider.swift in Sources */,
+				0BBF83BD1EE99AEF0000782E /* CookieStorageService.swift in Sources */,
+				0BBF83CE1EE99AEF0000782E /* LinkedInWebProvider.swift in Sources */,
+				0BBF83B51EE99AEF0000782E /* String+Hashing.swift in Sources */,
+				0BBF83BA1EE99AEF0000782E /* Extensible.swift in Sources */,
+				0BBF83C01EE99AEF0000782E /* WebRequestService.swift in Sources */,
+				0BBF83BE1EE99AEF0000782E /* DebugService.swift in Sources */,
+				0BBF83C81EE99AEF0000782E /* FacebookWebProvider.swift in Sources */,
+				0BBF83CB1EE99AEF0000782E /* InstagramProvider.swift in Sources */,
+				0BBF83C21EE99AEF0000782E /* AuthorizeError.swift in Sources */,
+				0BBF83D11EE99AEF0000782E /* TwitterWebProvider.swift in Sources */,
+				0BBF83B81EE99AEF0000782E /* URLRequest+OAuth.swift in Sources */,
+				0BBF83B11EE99AEF0000782E /* ACAccountStore+Access.swift in Sources */,
+				0BBF83C51EE99AEF0000782E /* Provider.swift in Sources */,
+				0BBF83B91EE99AEF0000782E /* URLSession+Resuming.swift in Sources */,
+				0BBF83B21EE99AEF0000782E /* Dictionary+Transforming.swift in Sources */,
+				0BBF83CA1EE99AEF0000782E /* GoogleWebProvider.swift in Sources */,
+				0BBF83CC1EE99AEF0000782E /* InstagramWebProvider.swift in Sources */,
+				0BBF83C41EE99AEF0000782E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
