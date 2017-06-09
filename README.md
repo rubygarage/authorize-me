@@ -24,9 +24,12 @@ To integrate AuthorizeMe into Xcode project using CocoaPods, specify it in `Podf
 platform :ios, '10.0'
 
 target 'Target Name' do
-use_frameworks!
+    use_frameworks!
 
-pod 'AuthorizeMe'
+    pod 'AuthorizeMe'
+    # or 
+    # pod 'AuthorizeMe/Facebook'
+    # to integrate Facebook only
 
 end
 ```
@@ -55,7 +58,7 @@ Finally, use `Authorize` manager that authorize user with `SystemProvider` if it
 
 ````swift
 Authorize.me.on("Name of social network") { session, error in
-// Do something
+    // Do something
 }
 ````
 
@@ -67,7 +70,7 @@ let provider = FacebookSystemProvider()
 // let provider = TwitterWebProvider()
 
 provider.authorize { session, error in
-// Do something
+    // Do something
 }
 ````
 
