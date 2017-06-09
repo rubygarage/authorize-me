@@ -16,31 +16,19 @@ public class Authorize {
     private var webProvider: Provider!
     
     public func on(_ nameOfProvider: String, _ completion: @escaping Providing.Completion) {
-        switch nameOfProvider {
-        case _ where nameOfProvider == "Facebook":
-            if FacebookProvider() != nil {
-                systemProvider = FacebookSystemProvider()
-                webProvider = FacebookWebProvider()
-            }
-        case _ where nameOfProvider == "Twitter":
-            if TwitterProvider() != nil {
-                systemProvider = TwitterSystemProvider()
-                webProvider = TwitterWebProvider()
-            }
-        case _ where nameOfProvider == "Google":
-            webProvider = GoogleWebProvider()
-        case _ where nameOfProvider == "Instagram":
-            webProvider = InstagramWebProvider()
-        case _ where nameOfProvider == "LinkedIn":
-            webProvider = LinkedInWebProvider()
-        default:
-            DebugService.output("There is no provider with name \(nameOfProvider)")
-        }
+        let bundleName = Bundle(for: type(of: self)).infoDictionary!["CFBundleName"] as! String
         
-        guard systemProvider != nil || webProvider != nil else {
+        guard (NSClassFromString("\(bundleName).\(nameOfProvider)Provider") as? Provider.Type) != nil else {
+            DebugService.output("There is no provider with name \(nameOfProvider)")
             completion(nil, AuthorizeError.provider)
             return
         }
+        
+        if let provider = NSClassFromString("\(bundleName).\(nameOfProvider)SystemProvider") as? Provider.Type {
+            systemProvider = provider.init()
+        }
+        
+        webProvider = (NSClassFromString("\(bundleName).\(nameOfProvider)WebProvider") as! Provider.Type).init()
         
         authorize { [unowned self] session, error in
             self.systemProvider = nil
