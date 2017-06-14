@@ -76,9 +76,9 @@ provider.authorize { session, error in
 
 ## Guides
 
-* **[Facebook Provider](https://github.com/radislavcrechet/AuthorizeMe/wiki/Facebook-Provider)**
-* **[Twitter Provider](https://github.com/radislavcrechet/AuthorizeMe/wiki/Twitter-Provider)**
-* **[Google Provider](https://github.com/radislavcrechet/AuthorizeMe/wiki/Google-Provider)**
-* **[Instagram Provider](https://github.com/radislavcrechet/AuthorizeMe/wiki/Instagram-Provider)**
-* **[LinkedIn Provider](https://github.com/radislavcrechet/AuthorizeMe/wiki/LinkedIn-Provider)**
-* **[Custom Provider](https://github.com/radislavcrechet/AuthorizeMe/wiki/Custom-Provider)**
+* **[Facebook Provider](https://github.com/rubygarage/authorize-me/wiki/Facebook-Provider)**
+* **[Twitter Provider](https://github.com/rubygarage/authorize-me/wiki/Twitter-Provider)**
+* **[Google Provider](https://github.com/rubygarage/authorize-me/wiki/Google-Provider)**
+* **[Instagram Provider](https://github.com/rubygarage/authorize-me/wiki/Instagram-Provider)**
+* **[LinkedIn Provider](https://github.com/rubygarage/authorize-me/wiki/LinkedIn-Provider)**
+* **[Custom Provider](https://github.com/rubygarage/authorize-me/wiki/Custom-Provider)**
