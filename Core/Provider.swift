@@ -41,4 +41,8 @@ open class Provider: Providing {
         completion(nil, AuthorizeError.provider)
     }
     
+    public func logout() {
+        CookieStorageService.deleteCookies(withDomainLike: name.lowercased())
+    }
+    
 }

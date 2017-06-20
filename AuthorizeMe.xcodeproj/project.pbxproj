@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5869BC1EF9309D00930A94 /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5869BB1EF9309D00930A94 /* Logout.swift */; };
 		0B972A981ED468A5001853CF /* AuthorizeMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */; };
 		0B972A9D1ED468A5001853CF /* AuthorizeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972A9C1ED468A5001853CF /* AuthorizeMeTests.swift */; };
 		0B972AA91ED46927001853CF /* AuthorizeMe.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0B972AA81ED46927001853CF /* AuthorizeMe.podspec */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5869BB1EF9309D00930A94 /* Logout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
 		0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthorizeMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B972A921ED468A4001853CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B972A971ED468A5001853CF /* AuthorizeMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthorizeMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				0BBF83801EE99AEF0000782E /* Authorize.swift */,
+				0B5869BB1EF9309D00930A94 /* Logout.swift */,
 				0BBF839D1EE99AEF0000782E /* Provider.swift */,
 				0BBF83951EE99AEF0000782E /* CommonCrypto */,
 				0BBF83811EE99AEF0000782E /* Common */,
@@ -427,6 +430,7 @@
 				0BBF83B61EE99AEF0000782E /* String+Transforming.swift in Sources */,
 				0BBF83B71EE99AEF0000782E /* UIViewController+Hierarchy.swift in Sources */,
 				0BBF83CD1EE99AEF0000782E /* LinkedInProvider.swift in Sources */,
+				0B5869BC1EF9309D00930A94 /* Logout.swift in Sources */,
 				0BBF83D01EE99AEF0000782E /* TwitterSystemProvider.swift in Sources */,
 				0BBF83C11EE99AEF0000782E /* ProviderController.swift in Sources */,
 				0BBF83CF1EE99AEF0000782E /* TwitterProvider.swift in Sources */,
