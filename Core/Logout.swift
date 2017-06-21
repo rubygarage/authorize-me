@@ -12,18 +12,13 @@ public class Logout {
     
     public static let me = Logout()
     
-    private var provider: Provider!
-    
     public func from(_ nameOfProvider: String) {
-        let bundleName = Bundle(for: type(of: self)).infoDictionary!["CFBundleName"] as! String
-        
-        guard let provider = NSClassFromString("\(bundleName).\(nameOfProvider)Provider") as? Provider.Type else {
+        guard let provider = ProviderService.provider(ofType: .base, withName: nameOfProvider) else {
             DebugService.output("There is no provider with name \(nameOfProvider)")
             return
         }
         
-        self.provider = provider.init()
-        self.provider.logout()
+        provider.init()!.logout()
     }
 
 }

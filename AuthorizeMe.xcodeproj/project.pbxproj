@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B5869BC1EF9309D00930A94 /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5869BB1EF9309D00930A94 /* Logout.swift */; };
+		0B5869BE1EFA63A900930A94 /* ProviderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5869BD1EFA63A900930A94 /* ProviderService.swift */; };
 		0B972A981ED468A5001853CF /* AuthorizeMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */; };
 		0B972A9D1ED468A5001853CF /* AuthorizeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972A9C1ED468A5001853CF /* AuthorizeMeTests.swift */; };
 		0B972AA91ED46927001853CF /* AuthorizeMe.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0B972AA81ED46927001853CF /* AuthorizeMe.podspec */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		0B5869BB1EF9309D00930A94 /* Logout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
+		0B5869BD1EFA63A900930A94 /* ProviderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderService.swift; sourceTree = "<group>"; };
 		0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthorizeMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B972A921ED468A4001853CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B972A971ED468A5001853CF /* AuthorizeMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthorizeMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +218,7 @@
 				0BBF83921EE99AEF0000782E /* DebugService.swift */,
 				0BBF83931EE99AEF0000782E /* UserAgentService.swift */,
 				0BBF83911EE99AEF0000782E /* CookieStorageService.swift */,
+				0B5869BD1EFA63A900930A94 /* ProviderService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				0BBF83C21EE99AEF0000782E /* AuthorizeError.swift in Sources */,
 				0BBF83D11EE99AEF0000782E /* TwitterWebProvider.swift in Sources */,
 				0BBF83B81EE99AEF0000782E /* URLRequest+OAuth.swift in Sources */,
+				0B5869BE1EFA63A900930A94 /* ProviderService.swift in Sources */,
 				0BBF83B11EE99AEF0000782E /* ACAccountStore+Access.swift in Sources */,
 				0BBF83C51EE99AEF0000782E /* Provider.swift in Sources */,
 				0BBF83B91EE99AEF0000782E /* URLSession+Resuming.swift in Sources */,

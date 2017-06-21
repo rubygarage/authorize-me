@@ -8,9 +8,9 @@
 
 import Foundation
 
-public struct CookieStorageService {
+struct CookieStorageService {
     
-    public static func deleteCookies(withDomainLike substring: String) {
+    static func deleteCookies(withDomainLike substring: String) {
         guard let cookies = HTTPCookieStorage.shared.cookies else {
             return
         }
