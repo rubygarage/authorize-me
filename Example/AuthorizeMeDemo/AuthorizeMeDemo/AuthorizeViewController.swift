@@ -17,7 +17,7 @@ class AuthorizeViewController: UIViewController {
 
     @IBAction func authorizeMeButtonPressed(_ sender: Any) {
         guard let text = nameOfProviderTextField.text,
-            text.characters.count > 0 else {
+            text.count > 0 else {
                 
                 return
         }
