@@ -53,7 +53,7 @@ class ProviderController: UINavigationController {
         completion(url, error)
     }
     
-    func cancel() {
+    @objc func cancel() {
         complete(withUrl: nil, error: AuthorizeError.cancel)
     }
     
