@@ -10,11 +10,12 @@ import Foundation
 import Accounts
 import Social
 
+@available(iOS, deprecated: 11.0)
 public class FacebookSystemProvider: FacebookProvider {
-    
+
     public required init?() {
         super.init()
-        
+
         if #available(iOS 11.0, *) {
             DebugService.output(AuthorizeError.deprecateMessage)
             return nil

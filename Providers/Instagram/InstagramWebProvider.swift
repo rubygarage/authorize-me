@@ -11,8 +11,6 @@ import Foundation
 public class InstagramWebProvider: InstagramProvider {
     
     public override func authorize(_ completion: @escaping Providing.Completion) {
-        CookieStorageService.deleteCookies(withDomainLike: "instagram")
-        
         accessToken { [unowned self] accessToken, error in
             guard let accessToken = accessToken as? String else {
                 completion(nil, error)

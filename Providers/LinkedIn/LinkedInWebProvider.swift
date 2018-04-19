@@ -13,8 +13,6 @@ public class LinkedInWebProvider: LinkedInProvider {
     private typealias Completion = (_ code: String?, _ error: AuthorizeError?) -> Void
     
     public override func authorize(_ completion: @escaping Providing.Completion) {
-        CookieStorageService.deleteCookies(withDomainLike: "linkedin")
-        
         code { [unowned self] code, error in
             guard let code = code else {
                 completion(nil, error)

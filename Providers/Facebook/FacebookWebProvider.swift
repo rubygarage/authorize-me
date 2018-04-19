@@ -11,8 +11,6 @@ import Foundation
 public class FacebookWebProvider: FacebookProvider {
     
     public override func authorize(_ completion: @escaping Providing.Completion) {
-        CookieStorageService.deleteCookies(withDomainLike: "facebook")
-        
         accessToken { [unowned self] accessToken, error in
             guard let accessToken = accessToken as? [String: String] else {
                 completion(nil, error)

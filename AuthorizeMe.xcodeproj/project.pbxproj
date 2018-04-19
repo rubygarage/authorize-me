@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5869BC1EF9309D00930A94 /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5869BB1EF9309D00930A94 /* Logout.swift */; };
+		0B5869BE1EFA63A900930A94 /* ProviderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5869BD1EFA63A900930A94 /* ProviderService.swift */; };
 		0B972A981ED468A5001853CF /* AuthorizeMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */; };
 		0B972A9D1ED468A5001853CF /* AuthorizeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972A9C1ED468A5001853CF /* AuthorizeMeTests.swift */; };
 		0B972AA91ED46927001853CF /* AuthorizeMe.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0B972AA81ED46927001853CF /* AuthorizeMe.podspec */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5869BB1EF9309D00930A94 /* Logout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
+		0B5869BD1EFA63A900930A94 /* ProviderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderService.swift; sourceTree = "<group>"; };
 		0B972A8E1ED468A4001853CF /* AuthorizeMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthorizeMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B972A921ED468A4001853CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B972A971ED468A5001853CF /* AuthorizeMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthorizeMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				0BBF83801EE99AEF0000782E /* Authorize.swift */,
+				0B5869BB1EF9309D00930A94 /* Logout.swift */,
 				0BBF839D1EE99AEF0000782E /* Provider.swift */,
 				0BBF83951EE99AEF0000782E /* CommonCrypto */,
 				0BBF83811EE99AEF0000782E /* Common */,
@@ -213,6 +218,7 @@
 				0BBF83921EE99AEF0000782E /* DebugService.swift */,
 				0BBF83931EE99AEF0000782E /* UserAgentService.swift */,
 				0BBF83911EE99AEF0000782E /* CookieStorageService.swift */,
+				0B5869BD1EFA63A900930A94 /* ProviderService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -358,7 +364,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = RubyGarage;
 				TargetAttributes = {
 					0B972A8D1ED468A4001853CF = {
@@ -427,6 +433,7 @@
 				0BBF83B61EE99AEF0000782E /* String+Transforming.swift in Sources */,
 				0BBF83B71EE99AEF0000782E /* UIViewController+Hierarchy.swift in Sources */,
 				0BBF83CD1EE99AEF0000782E /* LinkedInProvider.swift in Sources */,
+				0B5869BC1EF9309D00930A94 /* Logout.swift in Sources */,
 				0BBF83D01EE99AEF0000782E /* TwitterSystemProvider.swift in Sources */,
 				0BBF83C11EE99AEF0000782E /* ProviderController.swift in Sources */,
 				0BBF83CF1EE99AEF0000782E /* TwitterProvider.swift in Sources */,
@@ -441,6 +448,7 @@
 				0BBF83C21EE99AEF0000782E /* AuthorizeError.swift in Sources */,
 				0BBF83D11EE99AEF0000782E /* TwitterWebProvider.swift in Sources */,
 				0BBF83B81EE99AEF0000782E /* URLRequest+OAuth.swift in Sources */,
+				0B5869BE1EFA63A900930A94 /* ProviderService.swift in Sources */,
 				0BBF83B11EE99AEF0000782E /* ACAccountStore+Access.swift in Sources */,
 				0BBF83C51EE99AEF0000782E /* Provider.swift in Sources */,
 				0BBF83B91EE99AEF0000782E /* URLSession+Resuming.swift in Sources */,
@@ -480,7 +488,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -488,7 +498,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -534,7 +548,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -542,7 +558,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -589,7 +609,7 @@
 				SKIP_INSTALL = YES;
 				"SWIFT_INCLUDE_PATHS[sdk=iphoneos*]" = "${SRCROOT}/Cocoapods/iphoneos";
 				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = "${SRCROOT}/Cocoapods/iphonesimulator";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -611,7 +631,7 @@
 				SKIP_INSTALL = YES;
 				"SWIFT_INCLUDE_PATHS[sdk=iphoneos*]" = "${SRCROOT}/Cocoapods/iphoneos";
 				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = "${SRCROOT}/Cocoapods/iphonesimulator";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -624,7 +644,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.rubygarage.AuthorizeMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -637,7 +657,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.rubygarage.AuthorizeMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

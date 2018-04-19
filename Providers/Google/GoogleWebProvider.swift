@@ -13,7 +13,6 @@ public class GoogleWebProvider: GoogleProvider {
     private typealias Completion = (_ code: String?, _ error: AuthorizeError?) -> Void
     
     public override func authorize(_ completion: @escaping Providing.Completion) {
-        CookieStorageService.deleteCookies(withDomainLike: "google")
         UserAgentService.substitute()
         
         code { [unowned self] code, error in
