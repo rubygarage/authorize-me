@@ -10,7 +10,7 @@ import Foundation
 
 public extension String {
     
-    public var dictionary: [String: String] {
+    var dictionary: [String: String] {
         var parameters = [String: String]()
         
         self.components(separatedBy: "&").forEach { tuple in

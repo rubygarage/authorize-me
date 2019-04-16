@@ -53,7 +53,7 @@ public class InstagramWebProvider: InstagramProvider {
         
         URLSession.resumeDataTask(with: request) { data, error in
             guard let data = data,
-                let parameters = try? JSONSerialization.jsonObject(with: data) as! [String: Any],
+                let parameters = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
                 let account = parameters["data"] as? [String: Any] else {
                     
                     if error == nil {

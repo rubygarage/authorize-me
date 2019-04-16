@@ -11,9 +11,9 @@ import Accounts
 
 public extension ACAccountStore {
     
-    public typealias Completion = (_ account: ACAccount?, _ error: AuthorizeError?) -> Void
+    typealias Completion = (_ account: ACAccount?, _ error: AuthorizeError?) -> Void
     
-    public static func account(withTypeIdentifier typeIdentifier: String,
+    static func account(withTypeIdentifier typeIdentifier: String,
                                options: [String: Any]? = nil,
                                completion: @escaping Completion) {
         

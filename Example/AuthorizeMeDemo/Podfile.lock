@@ -1,21 +1,21 @@
 PODS:
-  - AuthorizeMe (1.2.0):
-    - AuthorizeMe/Core (= 1.2.0)
-    - AuthorizeMe/Facebook (= 1.2.0)
-    - AuthorizeMe/Google (= 1.2.0)
-    - AuthorizeMe/Instagram (= 1.2.0)
-    - AuthorizeMe/LinkedIn (= 1.2.0)
-    - AuthorizeMe/Twitter (= 1.2.0)
-  - AuthorizeMe/Core (1.2.0)
-  - AuthorizeMe/Facebook (1.2.0):
+  - AuthorizeMe (1.2.1):
+    - AuthorizeMe/Core (= 1.2.1)
+    - AuthorizeMe/Facebook (= 1.2.1)
+    - AuthorizeMe/Google (= 1.2.1)
+    - AuthorizeMe/Instagram (= 1.2.1)
+    - AuthorizeMe/LinkedIn (= 1.2.1)
+    - AuthorizeMe/Twitter (= 1.2.1)
+  - AuthorizeMe/Core (1.2.1)
+  - AuthorizeMe/Facebook (1.2.1):
     - AuthorizeMe/Core
-  - AuthorizeMe/Google (1.2.0):
+  - AuthorizeMe/Google (1.2.1):
     - AuthorizeMe/Core
-  - AuthorizeMe/Instagram (1.2.0):
+  - AuthorizeMe/Instagram (1.2.1):
     - AuthorizeMe/Core
-  - AuthorizeMe/LinkedIn (1.2.0):
+  - AuthorizeMe/LinkedIn (1.2.1):
     - AuthorizeMe/Core
-  - AuthorizeMe/Twitter (1.2.0):
+  - AuthorizeMe/Twitter (1.2.1):
     - AuthorizeMe/Core
 
 DEPENDENCIES:
@@ -26,8 +26,8 @@ EXTERNAL SOURCES:
     :path: "../.."
 
 SPEC CHECKSUMS:
-  AuthorizeMe: 5e248019e4db552c69b8b22e41cbc0426525b0ef
+  AuthorizeMe: af0f96f4b9e1278b2dad73e82a5daad95c305eb2
 
 PODFILE CHECKSUM: 4f73bbe9e04a11f8488efbdc2237ae5f295a933f
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

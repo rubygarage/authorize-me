@@ -10,9 +10,9 @@ import Foundation
 
 public extension URLSession {
     
-    public typealias Completion = (_ data: Data?, _ error: AuthorizeError?) -> Void
+    typealias Completion = (_ data: Data?, _ error: AuthorizeError?) -> Void
     
-    public static func resumeDataTask(with request: URLRequest, _ completion: @escaping Completion) {
+    static func resumeDataTask(with request: URLRequest, _ completion: @escaping Completion) {
         let task = URLSession.shared.dataTask(with: request) { data, response, _ in
             DispatchQueue.main.async {
                 guard let response = response as? HTTPURLResponse,

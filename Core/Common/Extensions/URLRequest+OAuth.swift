@@ -10,11 +10,11 @@ import Foundation
 
 public extension URLRequest {
     
-    public typealias Consumer = (key: String, secret: String)
-    public typealias Access = (token: String?, secret: String?)
-    public typealias Completion = (_ token: Any?, _ error: AuthorizeError?) -> Void
+    typealias Consumer = (key: String, secret: String)
+    typealias Access = (token: String?, secret: String?)
+    typealias Completion = (_ token: Any?, _ error: AuthorizeError?) -> Void
     
-    public enum HTTPMethod: String {
+    enum HTTPMethod: String {
         case GET, POST
     }
     
@@ -26,7 +26,7 @@ public extension URLRequest {
         return String(Int(Date().timeIntervalSince1970))
     }
     
-    public init(url: URL,
+    init(url: URL,
                 httpMethod: HTTPMethod,
                 parameters: [String: String]? = nil,
                 consumer: Consumer,
