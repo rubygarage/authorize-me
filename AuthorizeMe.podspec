@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name = "AuthorizeMe"
   s.summary = "Authorization with social networks"
-  s.version = "1.2.1"
+  s.version = "1.2.2"
   s.homepage = "https://github.com/rubygarage/authorize-me"
   s.license = 'MIT'
 
@@ -17,11 +17,11 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
   s.requires_arc = true
+  s.swift_version = '5.0'
 
   s.subspec 'Core' do |ss|
 
     ss.source_files = 'Core/**/*.swift'
-    ss.preserve_paths = 'CocoaPods/**/*'
 
     ss.pod_target_xcconfig = {
       'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]' => '$(PODS_ROOT)/AuthorizeMe/CocoaPods/iphoneos',
