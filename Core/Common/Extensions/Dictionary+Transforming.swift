@@ -10,7 +10,7 @@ import Foundation
 
 public extension Dictionary {
     
-    public var string: String {
+    var string: String {
         return self.map { "\($0)=\($1)" }.joined(separator: "&")
     }
 

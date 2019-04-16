@@ -72,7 +72,7 @@ public class GoogleWebProvider: GoogleProvider {
         
         URLSession.resumeDataTask(with: request) { data, error in
             guard let data = data,
-                let parameters = try? JSONSerialization.jsonObject(with: data) as! [String: Any],
+                let parameters = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
                 parameters["access_token"] != nil,
                 parameters["id_token"] != nil,
                 parameters["expires_in"] != nil,
@@ -97,7 +97,7 @@ public class GoogleWebProvider: GoogleProvider {
         
         URLSession.resumeDataTask(with: request) { data, error in
             guard let data = data,
-                let account = try? JSONSerialization.jsonObject(with: data) as! [String: Any] else {
+                let account = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else {
                     
                     if error == nil {
                         DebugService.output(AuthorizeError.parseMessage)

@@ -21,7 +21,7 @@ extension String {
         var bytes = [CUnsignedChar](repeating: 0, count: Int(CC_SHA1_DIGEST_LENGTH))
         CCHmac(CCHmacAlgorithm(kCCHmacAlgSHA1), key, lengthOfKey, data, lengthOfData, &bytes)
         
-        return Data(bytes: bytes).base64EncodedString()
+        return Data(bytes).base64EncodedString()
     }
     
 }
