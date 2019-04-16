@@ -239,7 +239,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AuthorizeMeDemo/Pods-AuthorizeMeDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AuthorizeMeDemo/Pods-AuthorizeMeDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AuthorizeMe/AuthorizeMe.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -248,7 +248,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthorizeMeDemo/Pods-AuthorizeMeDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthorizeMeDemo/Pods-AuthorizeMeDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EF29EEABCADCD87C2CB910A5 /* [CP] Check Pods Manifest.lock */ = {
