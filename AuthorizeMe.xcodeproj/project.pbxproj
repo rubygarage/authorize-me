@@ -84,7 +84,6 @@
 		0BBF83921EE99AEF0000782E /* DebugService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugService.swift; sourceTree = "<group>"; };
 		0BBF83931EE99AEF0000782E /* UserAgentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAgentService.swift; sourceTree = "<group>"; };
 		0BBF83941EE99AEF0000782E /* WebRequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRequestService.swift; sourceTree = "<group>"; };
-		0BBF83961EE99AEF0000782E /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		0BBF83981EE99AEF0000782E /* ProviderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderController.swift; sourceTree = "<group>"; };
 		0BBF839A1EE99AEF0000782E /* AuthorizeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeError.swift; sourceTree = "<group>"; };
 		0BBF839B1EE99AEF0000782E /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -167,7 +166,6 @@
 				0BBF83801EE99AEF0000782E /* Authorize.swift */,
 				0B5869BB1EF9309D00930A94 /* Logout.swift */,
 				0BBF839D1EE99AEF0000782E /* Provider.swift */,
-				0BBF83951EE99AEF0000782E /* CommonCrypto */,
 				0BBF83811EE99AEF0000782E /* Common */,
 				0BBF83991EE99AEF0000782E /* Models */,
 				0BBF83971EE99AEF0000782E /* Controllers */,
@@ -221,14 +219,6 @@
 				0B5869BD1EFA63A900930A94 /* ProviderService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		0BBF83951EE99AEF0000782E /* CommonCrypto */ = {
-			isa = PBXGroup;
-			children = (
-				0BBF83961EE99AEF0000782E /* module.modulemap */,
-			);
-			path = CommonCrypto;
 			sourceTree = "<group>";
 		};
 		0BBF83971EE99AEF0000782E /* Controllers */ = {

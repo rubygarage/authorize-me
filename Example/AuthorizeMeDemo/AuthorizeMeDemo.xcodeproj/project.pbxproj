@@ -87,19 +87,19 @@
 		0B972AED1ED47FDF001853CF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0B972AEE1ED48064001853CF /* Aseets */,
+				0B972AEE1ED48064001853CF /* Assets */,
 				0B972AEF1ED48097001853CF /* Lists */,
 				0B972AF01ED480F6001853CF /* Storyboards */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		0B972AEE1ED48064001853CF /* Aseets */ = {
+		0B972AEE1ED48064001853CF /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				0B7E34331ED2C58E00E5AE59 /* Assets.xcassets */,
 			);
-			name = Aseets;
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		0B972AEF1ED48097001853CF /* Lists */ = {
